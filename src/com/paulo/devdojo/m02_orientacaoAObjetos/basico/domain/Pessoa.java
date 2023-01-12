@@ -1,8 +1,8 @@
 package com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain;
 public class Pessoa {
-    private String nome;
-    private int idade;
-    private char sexo;
+    protected String nome;
+    protected int idade;
+    protected char sexo;
     public Pessoa (){}
 
     public Pessoa(String nome, int idade, char sexo){
