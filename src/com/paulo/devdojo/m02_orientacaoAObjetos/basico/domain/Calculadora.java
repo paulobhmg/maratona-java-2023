@@ -29,4 +29,24 @@ public abstract class Calculadora {
             System.out.printf("%.0f/%.0f=%.2f", num1, num2, num1/num2);
         }
     }
+
+    public static double novoCalculo(double num1, double num2) {
+        return num1 + num1;
+    }
+
+    public static double novoCalculo(double num1, double num2, char operador) {
+        switch(operador){
+            case '+':
+                return soma(num1, num2);
+            case '-':
+                return subtracao(num1, num2);
+            case '*':
+                return multiplicacao(num1, num2);
+            case '/':
+                return divisao(num1, num2);
+            default:
+                System.out.println("Operador inválido...");
+                return 0;
+        }
+    }
 }
