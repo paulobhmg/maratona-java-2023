@@ -1,24 +1,59 @@
 package com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Student extends Person {
-    Teacher professor;
-    public Student(){
+    private List<Seminar> seminaries = new ArrayList<>();
+
+    public Student() {
         super();
     }
 
-    public Student(String nome, int idade, char sexo) {
-        super(nome, idade, sexo);
-    }
-    public Student(String nome, int idade, char sexo, Teacher professor) {
-        super(nome, idade, sexo);
-        this.professor = professor;
+    public Student(String name, int age, char gender) {
+        super(name, age, gender);
     }
 
-    public String toString(){
-        return String.format("Estudante: %s, \nProfessor: %s", super.toString(), getProfessor());
+    public Student(String name, int age, char gender, List<Seminar> seminaries) {
+        super(name, age, gender);
+        this.seminaries = seminaries;
     }
 
-    String getProfessor(){
-        return professor != null ? professor.toString() : "Nenhum";
+    public boolean add(Seminar seminar) {
+        if(seminaries.contains(seminar)) {
+            System.out.println("This student is already on the seminar.");
+            return false;
+        }
+        return seminaries.add(seminar);
+    }
+
+    public boolean remove(Seminar seminar) {
+        if(!seminaries.contains(seminar)) {
+            System.out.println("This student is not watching this seminar.");
+            return false;
+        }
+        return seminaries.remove(seminar);
+    }
+    public String toString() {
+        return String.format("Student: %s, \nSeminaries: %s", super.toString(), listSeminaries());
+    }
+
+    public List<Seminar> getSeminaries() {
+        return seminaries;
+    }
+
+    public void setSeminaries(List<Seminar> seminaries) {
+        this.seminaries = seminaries;
+    }
+
+    public String listSeminaries() {
+        if (seminaries.size() == 0) return "This student haven't seminaries to watch.";
+        StringBuilder seminariesDescription = new StringBuilder();
+        for (Seminar seminar : seminaries) {
+            seminariesDescription.append(
+                    String.format("\n%s, teacher: %s, Local: %s", seminar.getTitle(), (seminar.getTeacher() == null ? "Undefined" : seminar.getTeacher().getName()), seminar.getLocal().getAddress())
+            );
+        }
+        return seminariesDescription.toString();
     }
 }

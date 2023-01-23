@@ -23,7 +23,7 @@ public class A39_ClassesECoesao {
 
         System.out.println("Testando a coesão com as classes Estudante e Professor.");
         Teacher professor = new Teacher("Willian Suane", 36, 'M', "Java Viradao no Jiraya");
-        Student estudante = new Student("Paulo", 30, 'M', professor);
+        Student estudante = new Student("Paulo", 30, 'M');
 
         System.out.println(professor);
         System.out.println(estudante);
