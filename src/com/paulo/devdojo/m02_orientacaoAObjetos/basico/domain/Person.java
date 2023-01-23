@@ -1,41 +1,41 @@
 package com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain;
 public class Person {
-    protected String nome;
-    protected int idade;
-    protected char sexo;
+    protected String name;
+    protected int age;
+    protected char gender;
     public Person(){}
 
-    public Person(String nome, int idade, char sexo){
-        this.nome = nome;
-        this.idade = idade;
-        this.sexo = sexo;
+    public Person(String name, int age, char gender){
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getNome(){
-        return nome;
+    public String getName(){
+        return name;
     }
 
-    public int getIdade() {
-        return idade;
+    public int getAge() {
+        return age;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public char getSexo() {
-        return sexo;
+    public char getGender() {
+        return gender;
     }
 
-    public void setSexo(char sexo) {
-        this.sexo = sexo;
+    public void setGender(char gender) {
+        this.gender = gender;
     }
 
     public String toString(){
-        return (String.format("%s, %d anos, sexo: %c", nome, idade, sexo));
+        return (String.format("%s, %d years, gender: %c", name, age, gender));
     }
 }

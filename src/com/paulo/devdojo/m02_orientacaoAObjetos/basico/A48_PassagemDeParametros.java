@@ -46,7 +46,7 @@ public class A48_PassagemDeParametros {
 
     // Já na passagem por referência, ao alterar um atributo da referência, o valor será alterado também no objeto original.
     public static void testaPassagemPorReferencia(Person pessoa) {
-        pessoa.setIdade(50);
+        pessoa.setAge(50);
         System.out.printf("Dentro do método: %s\n", pessoa);
     }
 }
