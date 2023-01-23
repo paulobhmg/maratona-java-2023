@@ -1,6 +1,6 @@
 package com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain;
 
-public abstract class Calculadora {
+public abstract class Calculator {
 
     public static double soma(double num1, double num2) {
         return num1 + num2;

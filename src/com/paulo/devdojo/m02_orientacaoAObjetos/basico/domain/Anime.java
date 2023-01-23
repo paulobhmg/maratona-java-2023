@@ -4,6 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/* A construção de objetos possui uma sequência de inicialização.
+   1 - Alocação do espaço em memória para o objeto
+   2 - Atributos são inicializados com seus valores default ou predefinidos
+   3 - Os blocos de inicialização são executados
+   4 - O construtor é executado.
+
+   Os blocos de inicialização são executados sempre que um novo objeto é instanciado.
+   Eles são utilizados, por exemplo, para iniciar atributo, fazendo com que não seja necessário repetir
+   o mesmo código em vários construtores diferentes.
+ */
+
 public class Anime {
     private String name;
     private List<Episode> episodes;

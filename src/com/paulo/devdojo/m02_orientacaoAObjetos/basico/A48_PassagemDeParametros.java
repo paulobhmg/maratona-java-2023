@@ -1,6 +1,6 @@
 package com.paulo.devdojo.m02_orientacaoAObjetos.basico;
 
-import com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain.Pessoa;
+import com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain.Person;
 
 /* Existem dois tipos de passagem de parâmetros: passagem por valor e passagem por referência.
    Quando passamos tipos primitivos como argumento para métodos, enviamos uma cópia do valor, que será utilizado dentro do método e não
@@ -22,8 +22,8 @@ public class A48_PassagemDeParametros {
         System.out.println("----------------------------------------\n");
 
         System.out.println("Testando passagem de parâmetro por referência: ");
-        Pessoa p1 = new Pessoa("Paulo", 30, 'M');
-        Pessoa p2 = new Pessoa("Nadille", 24, 'F');
+        Person p1 = new Person("Paulo", 30, 'M');
+        Person p2 = new Person("Nadille", 24, 'F');
 
         System.out.println("P1 antes do método: " + p1);
         System.out.println("P2 antes do método: " + p2);
@@ -45,7 +45,7 @@ public class A48_PassagemDeParametros {
     }
 
     // Já na passagem por referência, ao alterar um atributo da referência, o valor será alterado também no objeto original.
-    public static void testaPassagemPorReferencia(Pessoa pessoa) {
+    public static void testaPassagemPorReferencia(Person pessoa) {
         pessoa.setIdade(50);
         System.out.printf("Dentro do método: %s\n", pessoa);
     }

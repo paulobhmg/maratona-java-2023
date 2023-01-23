@@ -1,12 +1,12 @@
 package com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain;
-public class Funcionario extends Pessoa{
+public class Employee extends Person {
     private double[] salarios;
 
-    public Funcionario(){
+    public Employee(){
         super();
     }
 
-    public Funcionario(String nome, int idade, char sexo, double... salarios){
+    public Employee(String nome, int idade, char sexo, double... salarios){
         super(nome, idade, sexo);
         this.salarios = salarios;
     }

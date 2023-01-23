@@ -1,8 +1,8 @@
 package com.paulo.devdojo.m02_orientacaoAObjetos.basico;
 
-import com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain.Estudante;
-import com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain.Pessoa;
-import com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain.Professor;
+import com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain.Student;
+import com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain.Person;
+import com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain.Teacher;
 
 /* No conteúdo do múdulo 1, utilizamos variáveis primitivas de forma isolada. Quando trabalhamos com objetos, entramos no contexto
    de referência, ou seja, uma variável do tipo Pessoa é uma referência à um objeto desse mesmo tipo e possui atributos em sua composição, que podem
@@ -17,13 +17,13 @@ import com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain.Professor;
    Baixo acoplamento é bom, pois quanto menos acoplada a classe for, melhor é sua manutenabilidade. */
 public class A39_ClassesECoesao {
     public static void main(String[] args) {
-        Pessoa pessoa = new Pessoa("Paulo", 30, 'M');
+        Person pessoa = new Person("Paulo", 30, 'M');
         System.out.println(pessoa);
         System.out.println("---------------------------");
 
         System.out.println("Testando a coesão com as classes Estudante e Professor.");
-        Professor professor = new Professor("Willian Suane", 36, 'M', "Java Viradao no Jiraya");
-        Estudante estudante = new Estudante("Paulo", 30, 'M', professor);
+        Teacher professor = new Teacher("Willian Suane", 36, 'M', "Java Viradao no Jiraya");
+        Student estudante = new Student("Paulo", 30, 'M', professor);
 
         System.out.println(professor);
         System.out.println(estudante);

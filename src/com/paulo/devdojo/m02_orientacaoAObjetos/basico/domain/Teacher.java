@@ -1,13 +1,13 @@
 package com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain;
 
-public class Professor extends Pessoa{
+public class Teacher extends Person {
     String especialidade;
 
-    public Professor(){
+    public Teacher(){
         super();
     }
 
-    public Professor(String nome, int idade, char sexo, String especialidade) {
+    public Teacher(String nome, int idade, char sexo, String especialidade) {
         super(nome, idade, sexo);
         this.especialidade = especialidade;
     }

@@ -1,11 +1,11 @@
 package com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain;
-public class Pessoa {
+public class Person {
     protected String nome;
     protected int idade;
     protected char sexo;
-    public Pessoa (){}
+    public Person(){}
 
-    public Pessoa(String nome, int idade, char sexo){
+    public Person(String nome, int idade, char sexo){
         this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
