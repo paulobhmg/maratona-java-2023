@@ -34,9 +34,7 @@ public class Seminar {
     }
 
     public String showStudents() {
-        if(students.size() == 0) {
-            return "There is not students for this seminar.";
-        }
+        if(students.size() == 0) return "There is not students for this seminar.";
         StringBuilder studentDescription = new StringBuilder();
         for(Student student : students) {
             studentDescription.append(String.format("%s, ", student.getName()));

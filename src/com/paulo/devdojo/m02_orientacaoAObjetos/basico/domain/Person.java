@@ -3,12 +3,25 @@ public class Person {
     protected String name;
     protected int age;
     protected char gender;
+
+    static {
+        System.out.println("Inside static block from the Person.");
+    }
+
+    {
+        System.out.println("Inside normal block 1 from the person.");
+    }
+
+    {
+        System.out.println("Inside normal block 2 from the person.");
+    }
     public Person(){}
 
     public Person(String name, int age, char gender){
         this.name = name;
         this.age = age;
         this.gender = gender;
+        System.out.println("Person constructor.");
     }
 
     public void setName(String name) {

@@ -1,36 +1,48 @@
 package com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain;
 public class Employee extends Person {
-    private double[] salarios;
+    private double[] salaries;
 
+    static {
+        System.out.println("Inside static block from the Employee.");
+    }
+
+    {
+        System.out.println("Inside normal block 1 from the employee.");
+    }
+
+    {
+        System.out.println("Inside normal block 2 from the employee.");
+    }
     public Employee(){
         super();
     }
 
-    public Employee(String nome, int idade, char sexo, double... salarios){
-        super(nome, idade, sexo);
-        this.salarios = salarios;
+    public Employee(String name, int age, char gender, double... salaries){
+        super(name, age, gender);
+        this.salaries = salaries;
+        System.out.println("Employee constructor.");
     }
 
-    public double calculaMediaSalario() {
-        double soma = 0;
-        for(double salario : salarios) {
-            soma += salario;
+    public double averageCalculate() {
+        double sum = 0;
+        for(double salary : salaries) {
+            sum += salary;
         }
-        return soma / this.salarios.length;
+        return sum / this.salaries.length;
     }
 
-    public String listaSalarios() {
-        if(this.salarios == null || this.salarios.length == 0) {
+    public String showSalaries() {
+        if(this.salaries == null || this.salaries.length == 0) {
             return "0";
         }
-        StringBuilder salarios = new StringBuilder();
-        for(double salario : this.salarios) {
-            salarios.append(String.format("%.2f ", salario));
+        StringBuilder salaries = new StringBuilder();
+        for(double salary : this.salaries) {
+            salaries.append(String.format("%.2f ", salary));
         }
-        return salarios.toString();
+        return salaries.toString();
     }
 
     public String toString(){
-        return String.format("Funcionário: %s. \nÚltimos três salários: %s.\nMédia: %.2f\n", super.toString(), listaSalarios(), calculaMediaSalario());
+        return String.format("Employee: %s. \nLast tree salaries: %s.\nAvarage: %.2f\n", super.toString(), showSalaries(), averageCalculate());
     }
 }
