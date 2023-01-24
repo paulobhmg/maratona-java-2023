@@ -23,15 +23,15 @@ package com.paulo.devdojo.m02_orientacaoAObjetos.basico.domain;
  */
 
 public class Car {
-    private static double maxSpeed;
+    private static final double MAX_SPEED;
     private String mark;
     private String model;
     private String color;
     int year;
 
     static {
-        maxSpeed = 250;
-        System.out.println("Inside static block: " + maxSpeed);
+        MAX_SPEED = 250;
+        System.out.println("Inside static block: " + MAX_SPEED);
     }
 
     {
@@ -81,15 +81,12 @@ public class Car {
         this.year = year;
     }
 
-    public String toString(){
-        return String.format("Mark: %s, model: %s, year: %d, color: %s, max speed: %.2f", mark, model, year, color, maxSpeed);
-    }
-
-    public static void setMaxSpeed(double maxSpeed) {
-        Car.maxSpeed = maxSpeed;
+    //O método toString aqui não poderá mais ser sobrescrito em novas classes que extendam Car.
+    public final String toString(){
+        return String.format("Mark: %s, model: %s, year: %d, color: %s, max speed: %.2f", mark, model, year, color, MAX_SPEED);
     }
 
     public static double getMaxSpeed() {
-        return maxSpeed;
+        return MAX_SPEED;
     }
 }

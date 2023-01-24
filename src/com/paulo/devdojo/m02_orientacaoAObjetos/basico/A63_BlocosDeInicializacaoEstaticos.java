@@ -12,7 +12,6 @@ public class A63_BlocosDeInicializacaoEstaticos {
         System.out.println(tcross);
         System.out.println(polo);
 
-        Car.setMaxSpeed(190);
         System.out.println(tcross);
         System.out.println(polo);
     }
