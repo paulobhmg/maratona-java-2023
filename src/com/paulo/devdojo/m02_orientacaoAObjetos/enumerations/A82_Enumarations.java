@@ -9,7 +9,7 @@ import com.paulo.devdojo.m02_orientacaoAObjetos.enumerations.enums.PaymentMethod
    da enumeração, pelo construtor.
    Através dos atritutos, é possível retornar valores recuperados pela enumeração, como um código ou uma descrição.
  */
-public class A82_Enumearations {
+public class A82_Enumarations {
     public static void main(String[] args) {
         Client client = new Client("Paulo", ClientTypeEnum.PHISICAL_PERSON);
         Sale sale = new Sale(client, 60, PaymentMethodEnum.DEBIT);
