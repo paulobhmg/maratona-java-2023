@@ -38,6 +38,7 @@ public class Sale {
     }
 
     public String toString() {
-        return String.format("Sale: %.2f, Client: %s - %s, Payment Method: %s", price, client.getName(), client.getClientType(),paymentMethodEnum.getDescription());
+        return String.format("Sale: %.2f, Client: %s - %s, Payment Method: %s, final price: %.2f, rate/discount: %.2f. ",
+            price, client.getName(), client.getClientType(),paymentMethodEnum.getDescription(), paymentMethodEnum.discountCalcule(price), paymentMethodEnum.getDiscount());
     }
 }
