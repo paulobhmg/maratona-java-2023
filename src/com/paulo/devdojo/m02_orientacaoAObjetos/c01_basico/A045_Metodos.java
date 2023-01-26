@@ -10,7 +10,7 @@ import java.util.Scanner;
 
    Os métodos podem possuir parâmetros, que devem ser passados como argumentos no momento de sua chamada.
  */
-public class A45_Metodos {
+public class A045_Metodos {
     private static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {

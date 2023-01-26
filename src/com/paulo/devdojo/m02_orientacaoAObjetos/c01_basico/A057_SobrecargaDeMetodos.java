@@ -6,7 +6,7 @@ import com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico.domain.Calculator;
    Isso possibilita diversificar a construção de objetos ou expande o uso de seus métodos.
 
    Os métodos sobrecarregados normalmente executam a mesma tarefa, difenciando apenas em seu número de argumentos. */
-public class A57_SobrecargaDeMetodos {
+public class A057_SobrecargaDeMetodos {
     public static void main(String[] args) {
         System.out.println("Novo cálculo: " + Calculator.novoCalculo(10, 20));
         System.out.println("Novo cálculo 1: " + Calculator.novoCalculo(10, 20, '+'));

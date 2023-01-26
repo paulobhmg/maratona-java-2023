@@ -14,7 +14,7 @@ import com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico.domain.Employee;
    9 - Execução dos blocos de inicialização do objeto filho
    10 - Execução do construtor o objeto filho.
  */
-public class A75_InitializationSequenceWithHerance {
+public class A075_InitializationSequenceWithHerance {
     public static void main(String[] args) {
         Employee employee = new Employee("Paulo", 30, 'M', 3475, 6850, 7656);
         Employee employee2 = new Employee("Tiago", 37, 'M', 12000, 25000, 33000);

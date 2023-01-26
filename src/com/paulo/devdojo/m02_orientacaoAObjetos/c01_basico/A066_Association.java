@@ -3,7 +3,7 @@ package com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico;
 import com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico.domain.School;
 import com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico.domain.Teacher;
 
-public class A66_Association {
+public class A066_Association {
     public static void main(String[] args) {
         Teacher javaTeacher = new Teacher("Juliano Gaspar", 50, 'M', "Java programming");
         Teacher mobileTeacher = new Teacher("Serufo", 45, 'M', "Mobile Development");

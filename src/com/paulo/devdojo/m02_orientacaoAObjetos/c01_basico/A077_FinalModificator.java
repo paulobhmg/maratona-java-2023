@@ -9,7 +9,7 @@ import com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico.domain.Car;
        não é possível atribuir um novo objeto para uma variável que já referencia um objeto.
        Ainda sim, é possível alterar os atributos do objeto. O que não será alterado é apenas sua referência.
  */
-public class A77_FinalModificator {
+public class A077_FinalModificator {
     public static void main(String[] args) {
         Car pulse = new Car("Fiat", "Pulse", "Cinza", 2023);
         System.out.println(Car.getMaxSpeed());

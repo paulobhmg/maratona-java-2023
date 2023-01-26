@@ -3,7 +3,7 @@ package com.paulo.devdojo.m01_basico;
 /* Arrays são objetos indexados que permitem alocar no mesmo espaço de memória um conjunto de valores do mesmo tipo.
    Por padrão, ao instanciar um array, seus elementos recebem valores padrão, de acordo com o tipo do array.
    É importante saber que não é permitido acessar elementos de um array nulo. */
-public class A32_Arrays {
+public class A032_Arrays {
     public static void main(String[] args) {
         String[] familia = new String[6];
 

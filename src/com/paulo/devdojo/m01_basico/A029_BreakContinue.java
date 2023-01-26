@@ -6,7 +6,7 @@ import java.util.Scanner;
    uma execução onde só se quer imprimir determinada quantidade de números, por exemplo, o laço é executado até o final, consumindo memória e processamento.
    Para evitar isso é necessário interromper ou até mesmo pular determinada iteração, de acordo com alguma regra específica, utilizando os comandos BREAK ou CONTINUE.
 */
-public class A29_BreakContinue {
+public class A029_BreakContinue {
     public static final Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {

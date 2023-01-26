@@ -5,7 +5,7 @@ import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.domain.Sale;
 import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.enums.ClientTypeEnum;
 import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.enums.PaymentMethodEnum;
 
-public class A82_EnumerationsMethodOverride {
+public class A082_EnumerationsMethodOverride {
     public static void main(String[] args) {
         Client client = new Client("Paulo", ClientTypeEnum.PHISICAL_PERSON);
         Sale bed = new Sale(client, 3000, PaymentMethodEnum.DEBIT);

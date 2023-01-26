@@ -8,7 +8,7 @@ import java.util.Scanner;
 
    As principais estruturas de condição são: IF, IF ELSE, IF ELSE IF, SWITCH.
  */
-public class A21_EstruturasCondicionais {
+public class A021_EstruturasCondicionais {
     private static final Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {

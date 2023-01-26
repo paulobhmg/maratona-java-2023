@@ -2,7 +2,7 @@ package com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations;
 
 import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.enums.ClientTypeEnum;
 
-public class A83_FidingEnumByName {
+public class A083_FidingEnumByName {
     public static void main(String[] args) {
         ClientTypeEnum clientType = ClientTypeEnum.valueOf("PHISICAL_PERSON");
         System.out.println(clientType);

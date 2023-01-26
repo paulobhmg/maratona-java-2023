@@ -9,7 +9,7 @@ import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.enums.ClientTyp
    Portanto, quando há uma lista de itens predefinidos, é interessante utilizar enumerações a fim de evitar que sejam passados
    valores diferentes ou inválidos.
  */
-public class A80_Enumerations {
+public class A080_Enumerations {
     public static void main(String[] args) {
         // Clientes instanciados sem enumeração. Aqui pode ocorrer a inconsistência de dados.
         Client client1 = new Client("Paulo", "Pessoa_fisica");

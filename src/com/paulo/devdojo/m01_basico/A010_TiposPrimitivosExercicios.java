@@ -2,7 +2,7 @@ package com.paulo.devdojo.m01_basico;
 
 import java.util.Scanner;
 
-public class A10_TiposPrimitivosExercicios {
+public class A010_TiposPrimitivosExercicios {
     private static final Scanner in = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.print("Nome: ");

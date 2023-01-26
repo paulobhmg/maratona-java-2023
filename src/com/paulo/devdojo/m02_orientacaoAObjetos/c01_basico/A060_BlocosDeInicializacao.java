@@ -3,7 +3,7 @@ package com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico;
 import com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico.domain.Anime;
 import com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico.domain.Episode;
 
-public class A60_BlocosDeInicializacao {
+public class A060_BlocosDeInicializacao {
     public static void main(String[] args) {
         Anime bleach = new Anime("Bleach", 360);
         Anime dragonBall = new Anime("Dragon ball Z", 500);

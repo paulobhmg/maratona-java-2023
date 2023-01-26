@@ -1,14 +1,12 @@
 package com.paulo.devdojo.m01_basico;
 
-import java.sql.SQLOutput;
-
 /* As operações no Java são feitas a partir de operações aritméticas, relacionais e lógicas.
    Operadores aritméticos: + - * / %
    Operadores relacionais: < > <= >= == !=
    Operadores lógicos: && ||
    Operadores de atribuição: = += -= /= *= ++ --
 */
-public class A15_Operadores {
+public class A015_Operadores {
     public static void main(String[] args) {
         System.out.println("OPERADORES ARITMÉTICOS");
         int number1,number2;

@@ -12,7 +12,7 @@ import com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico.domain.Person;
    Uma boa prática de programação quando trabalhamos com passagem por referência é não alterar o objeto original.
    Caso seja necessário executar alguma alteração, cria um novo objeto dentro do método e o retorna, com as devidas alterações.
  */
-public class A48_PassagemDeParametros {
+public class A048_PassagemDeParametros {
     public static void main(String[] args) {
         int num1 = 10;
         int num2 = 13;

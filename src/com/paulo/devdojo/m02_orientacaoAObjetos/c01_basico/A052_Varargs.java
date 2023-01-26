@@ -6,7 +6,7 @@ package com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico;
    Há uma regra específica para o varargs: Ele deve ser o último parâmetro do método.
    Não é possível haver outro parâmetro depois do varargs, pois ele vai pegar todos os valores restantes, separando por vírgula.
  */
-public class A52_Varargs {
+public class A052_Varargs {
     public static void main(String... args) {
         int calculo = calculaVarargs(10, 20, 30, 40, 50);
         System.out.println(calculo);

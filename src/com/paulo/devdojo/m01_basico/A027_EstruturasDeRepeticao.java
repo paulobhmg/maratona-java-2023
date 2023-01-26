@@ -5,7 +5,7 @@ import java.util.Scanner;
 /* Os laços de repetição são utilizados quando precisamos que o programa execute determinado trecho de código
    repetidas vezes. Existem 3 tipos de laços e cada um deles possui uma característica diferente. São eles:
    while, do while e for. */
-public class A27_EstruturasDeRepeticao {
+public class A027_EstruturasDeRepeticao {
     private static final Scanner in = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("LAÇO WHILE");

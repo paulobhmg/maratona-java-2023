@@ -7,7 +7,7 @@ package com.paulo.devdojo.m01_basico;
    Cada tipo primitivo ocupa um espaço específico na memória e possui um tamanho máximo em bits, ou seja,
    cada tipo poderá armazenar um valor até um limite específico.
  */
-public class A10_TiposPrimitivos {
+public class A010_TiposPrimitivos {
     public static void main(String[] args) {
         byte  age = 127;
         short money = 32422;

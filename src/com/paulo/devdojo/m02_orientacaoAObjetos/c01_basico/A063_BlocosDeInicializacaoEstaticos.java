@@ -2,7 +2,7 @@ package com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico;
 
 import com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico.domain.Car;
 
-public class A63_BlocosDeInicializacaoEstaticos {
+public class A063_BlocosDeInicializacaoEstaticos {
     public static void main(String[] args) {
         System.out.println("MaxSpeed for cars: " + Car.getMaxSpeed());
 

@@ -15,7 +15,7 @@ import com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico.domain.Teacher;
    A baixa coesão gera alto acoplamento e a alta coesão, o baixo acoplamento.
    Alto acoplamento é ruim, pois torna a classe dependente de informações que não são pertinentes à ela.
    Baixo acoplamento é bom, pois quanto menos acoplada a classe for, melhor é sua manutenabilidade. */
-public class A39_ClassesECoesao {
+public class A039_ClassesECoesao {
     public static void main(String[] args) {
         Person pessoa = new Person("Paulo", 30, 'M');
         System.out.println(pessoa);

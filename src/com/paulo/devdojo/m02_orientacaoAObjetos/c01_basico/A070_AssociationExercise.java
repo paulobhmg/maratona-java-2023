@@ -2,7 +2,7 @@ package com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico;
 
 import com.paulo.devdojo.m02_orientacaoAObjetos.c01_basico.domain.*;
 
-public class A70_AssociationExercise {
+public class A070_AssociationExercise {
     public static void main(String[] args) {
         Student student1 = new Student("Paulo", 30, 'M');
         Student student2 = new Student("Nathan", 27, 'M');
