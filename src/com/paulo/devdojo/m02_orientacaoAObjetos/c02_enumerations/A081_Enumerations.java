@@ -4,6 +4,9 @@ import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.domain.Client;
 import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.domain.Order;
 import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.enums.ClientTypeEnum;
 import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.enums.PaymentMethodEnum;
+import com.paulo.devdojo.m02_orientacaoAObjetos.c05_polimorphism.domain.employee.Seller;
+import com.paulo.devdojo.m02_orientacaoAObjetos.c05_polimorphism.domain.employee.Waiter;
+import com.paulo.devdojo.m02_orientacaoAObjetos.c05_polimorphism.domain.enums.PersonTypeEnum;
 
 /* As enumerações são compostas por constantes e essas constantes podem ter valores predefinidos, passados para os atributos
    da enumeração, pelo construtor.
@@ -12,9 +15,8 @@ import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.enums.PaymentMe
 public class A081_Enumerations {
     public static void main(String[] args) {
         Client client = new Client("Paulo", ClientTypeEnum.PHISICAL_PERSON);
-        Order order = new Order(client, 60, PaymentMethodEnum.DEBIT);
+
 
         System.out.println(client);
-        System.out.println(order);
     }
 }

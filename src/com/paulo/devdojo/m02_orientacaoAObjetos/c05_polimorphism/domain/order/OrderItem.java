@@ -1,16 +1,18 @@
-package com.paulo.devdojo.m02_orientacaoAObjetos.c05_polimorphism.domain.orders;
+package com.paulo.devdojo.m02_orientacaoAObjetos.c05_polimorphism.domain.order;
 
 import com.paulo.devdojo.m02_orientacaoAObjetos.c05_polimorphism.domain.product.Product;
 import com.paulo.devdojo.m02_orientacaoAObjetos.c05_polimorphism.interfaces.ISeller;
 
+import java.time.LocalDateTime;
+
 public class OrderItem {
     private Order order;
-    private String dateTime;
+    private LocalDateTime dateTime;
     private Product product;
     private double quantity;
     private ISeller clerk;
     public OrderItem() {}
-    public OrderItem(Order order, String dateTime, Product product, double quantity, ISeller clerk) {
+    public OrderItem(Order order, LocalDateTime dateTime, Product product, double quantity, ISeller clerk) {
         this.order = order;
         this.dateTime = dateTime;
         this.product = product;
@@ -39,11 +41,11 @@ public class OrderItem {
         this.order = order;
     }
 
-    public String getDateTime() {
+    public LocalDateTime getDateTime() {
         return dateTime;
     }
 
-    public void setDateTime(String dateTime) {
+    public void setDateTime(LocalDateTime dateTime) {
         this.dateTime = dateTime;
     }
 
