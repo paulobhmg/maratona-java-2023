@@ -1,7 +1,7 @@
 package com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations;
 
 import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.domain.Client;
-import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.domain.Sale;
+import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.domain.Order;
 import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.enums.ClientTypeEnum;
 import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.enums.PaymentMethodEnum;
 
@@ -12,9 +12,9 @@ import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.enums.PaymentMe
 public class A081_Enumerations {
     public static void main(String[] args) {
         Client client = new Client("Paulo", ClientTypeEnum.PHISICAL_PERSON);
-        Sale sale = new Sale(client, 60, PaymentMethodEnum.DEBIT);
+        Order order = new Order(client, 60, PaymentMethodEnum.DEBIT);
 
         System.out.println(client);
-        System.out.println(sale);
+        System.out.println(order);
     }
 }

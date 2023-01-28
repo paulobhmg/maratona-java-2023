@@ -1,8 +1,9 @@
 package com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.domain;
 
 import com.paulo.devdojo.m02_orientacaoAObjetos.c02_enumerations.enums.ClientTypeEnum;
+import com.paulo.devdojo.m02_orientacaoAObjetos.c05_polimorphism.domain.Person;
 
-public class Client {
+public abstract class Client extends Person {
     protected String name;
     protected String type;
 
