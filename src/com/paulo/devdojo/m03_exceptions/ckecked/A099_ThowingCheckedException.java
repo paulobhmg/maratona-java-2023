@@ -14,7 +14,15 @@ public class A099_ThowingCheckedException {
         try {
             file = createFileWithTreatment("/home/pasulo/Documents/cursos/java/devdojo/maratona-java-2023/src/com/paulo/devdojo/files/exception2.txt");
         } catch (IOException e) {
-            System.out.println("External treatment: " + getExceptionName(e) + ": " + e.getMessage());;
+            System.out.println("External treatment: " + getExceptionName(e) + ": " + e.getMessage());
+        }
+        System.out.println(file);
+        System.out.println("----------------------------------------");
+
+        try {
+            file = createFileWidhoutTreatment("/home/psulo/Documents/cursos/java/devdojo/maratona-java-2023/src/com/paulo/devdojo/files/exception2.txt");
+        } catch (IOException e) {
+            System.out.println("External treatment: " + getExceptionName(e) + ": " + e.getMessage());
         }
         System.out.println(file);
     }
@@ -36,6 +44,12 @@ public class A099_ThowingCheckedException {
         return file;
     }
 
+    // Aqui a exceção não está sendo tratada no método, que está lançando a responsabilidade para o método externo.
+    public static File createFileWidhoutTreatment(String path) throws IOException{
+        File file = new File(path);
+        file.createNewFile();
+        return file;
+    }
     public static String getExceptionName(Exception e) {
         return e.getClass().getSimpleName();
     }
