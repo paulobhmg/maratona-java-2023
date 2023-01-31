@@ -22,7 +22,7 @@ public class A104_CustomizedException {
 
     public static void signin(String user, String password) throws InvalidUserException {
         if(!user.equalsIgnoreCase("paulo") || !password.equals("ptanbh")) {
-            throw new InvalidUserException("User invalid");
+            throw new InvalidUserException("Invalid user or password.");
         }
         System.out.println("Welcome " + user + ". Your login was successfull.");
     }
