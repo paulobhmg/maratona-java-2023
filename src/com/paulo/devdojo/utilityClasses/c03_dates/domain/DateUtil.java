@@ -1,4 +1,4 @@
-package com.paulo.devdojo.utilityClasses.dates.domain;
+package com.paulo.devdojo.utilityClasses.c03_dates.domain;
 
 import java.text.DateFormat;
 import java.util.Calendar;

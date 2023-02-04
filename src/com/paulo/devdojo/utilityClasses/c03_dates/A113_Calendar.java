@@ -1,8 +1,7 @@
-package com.paulo.devdojo.utilityClasses.dates;
+package com.paulo.devdojo.utilityClasses.c03_dates;
 
-import com.paulo.devdojo.utilityClasses.dates.domain.DateUtil;
+import com.paulo.devdojo.utilityClasses.c03_dates.domain.DateUtil;
 
-import java.sql.SQLOutput;
 import java.util.Calendar;
 import java.util.Date;
 
