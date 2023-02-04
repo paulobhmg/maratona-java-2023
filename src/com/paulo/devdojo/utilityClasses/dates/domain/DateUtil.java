@@ -1,6 +1,9 @@
 package com.paulo.devdojo.utilityClasses.dates.domain;
 
+import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 public abstract class DateUtil {
     public static String getCalendarDate(Calendar calendar) {
@@ -11,5 +14,9 @@ public abstract class DateUtil {
                 calendar.get(Calendar.HOUR_OF_DAY),
                 calendar.get(Calendar.MINUTE),
                 calendar.get(Calendar.SECOND));
+    }
+
+    public static String getCalendarDateWithLocale(Date date, int style, Locale locale) {
+        return DateFormat.getDateInstance(style, locale).format(date);
     }
 }
