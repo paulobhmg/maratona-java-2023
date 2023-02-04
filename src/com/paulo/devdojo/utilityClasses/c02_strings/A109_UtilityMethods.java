@@ -32,5 +32,9 @@ public class A109_UtilityMethods {
 
         System.out.println(job.toLowerCase());
         System.out.println(jobFull.toUpperCase());
+        System.out.println("--------------------------------------------");
+
+        String jobFulldido = "     I will be a new big bixo in fullStack developer    ";
+        System.out.println(jobFulldido.trim());
     }
 }
