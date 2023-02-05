@@ -1,4 +1,4 @@
-package com.paulo.devdojo.utilityClasses.c02_strings;
+package com.paulo.devdojo.m04_utilityClasses.c02_strings;
 
 /* Quando o volume de trabalho é muito grande, Strings tendem a perder a performance.
    Por isso, existem duas outras classes que trabalham com quantidades maiores de texto e performance muito superior que as Strings.

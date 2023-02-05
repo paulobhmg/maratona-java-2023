@@ -1,4 +1,4 @@
-package com.paulo.devdojo.utilityClasses.c01_wrapperClasses;
+package com.paulo.devdojo.m04_utilityClasses.c01_wrapperClasses;
 
 /* As classes wrapper incapsulam os tipos primitivos, transformando-os em objetos. Dessa forma, é possível utizar métodos
    que facilitam o trabalho com essas classes e utilizar referências, utilizado como passagem de parâmetro por referência.

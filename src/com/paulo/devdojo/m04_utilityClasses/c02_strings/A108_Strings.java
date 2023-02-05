@@ -1,4 +1,4 @@
-package com.paulo.devdojo.utilityClasses.c02_strings;
+package com.paulo.devdojo.m04_utilityClasses.c02_strings;
 
 /* Strings são utilizadas para armazenamento de textos.
    Elas são imutáveis e tem uma área reservada apenas para Strings, chamada "pool de strings".

@@ -1,4 +1,4 @@
-package com.paulo.devdojo.utilityClasses.c03_dates;
+package com.paulo.devdojo.m04_utilityClasses.c03_dates;
 
 import java.time.Instant;
 import java.util.Date;

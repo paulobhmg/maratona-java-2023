@@ -1,4 +1,4 @@
-package com.paulo.devdojo.utilityClasses.c02_strings;
+package com.paulo.devdojo.m04_utilityClasses.c02_strings;
 
 /* Strings fornecem uma quantidade de métodos úteis, que podem ser utilizados para manipulação do valor da String. */
 public class A109_UtilityMethods {
