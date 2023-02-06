@@ -1,9 +1,8 @@
 package com.paulo.devdojo.m04_utilityClasses.c03_dates.domain;
 
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalTime;
+import java.time.Period;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -29,5 +28,8 @@ public abstract class DateUtil {
     public static String getDateDefault(Calendar calendar, String pattern) {
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
         return sdf.format(calendar.getTime());
+    }
+    public static String getPeriodFromLocalDate(Period period) {
+        return String.format("%d years, %d months, %d days.", period.getYears(), period.getMonths(), period.getDays());
     }
 }
