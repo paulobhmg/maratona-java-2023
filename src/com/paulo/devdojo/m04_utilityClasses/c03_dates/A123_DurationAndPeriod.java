@@ -18,6 +18,9 @@ public class A123_DurationAndPeriod {
 
         Duration time = Duration.between(begin, end);
         System.out.println(time);
+        System.out.println(Duration.ofDays(10));
+        System.out.println(Duration.ofHours(50));
+        System.out.println(Duration.ofMinutes(600));
         System.out.println("---------------------------------");
 
         LocalDate birthday = LocalDate.of(1992, Month.AUGUST, 17);
@@ -31,5 +34,18 @@ public class A123_DurationAndPeriod {
         System.out.println(Period.ofMonths(30));
         System.out.println(Period.ofYears(3));
         System.out.println(Period.ofWeeks(30)); // Quando utilizamos o ofWeek(), internamente o Java faz uma conversão para dias, retornando o número de dias.
+        System.out.println("---------------------------------");
+
+        begin = LocalDateTime.of(2023, Month.FEBRUARY, 14, 20, 25, 2);
+        end =   begin.plusHours(5).plusMinutes(13).plusSeconds(28);
+
+        Duration duration = Duration.between(begin, end);
+        LocalTime timeCalculated = DateUtil.getTimeCalculated(duration);
+        System.out.println(timeCalculated);
+
+        // Além do método estático da classe, é possível trabalhar utilizando o próprio objeto, desde que seja um Temporal.
+        System.out.println(birthday.until(LocalDateTime.now(), ChronoUnit.YEARS));
+        System.out.println(birthday.until(LocalDateTime.now(), ChronoUnit.MONTHS));
+        System.out.println(birthday.until(LocalDateTime.now(), ChronoUnit.DAYS));
     }
 }

@@ -2,6 +2,8 @@ package com.paulo.devdojo.m04_utilityClasses.c03_dates.domain;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.time.LocalTime;
 import java.time.Period;
 import java.util.Calendar;
 import java.util.Date;
@@ -31,5 +33,9 @@ public abstract class DateUtil {
     }
     public static String getPeriodFromLocalDate(Period period) {
         return String.format("%d years, %d months, %d days.", period.getYears(), period.getMonths(), period.getDays());
+    }
+
+    public static LocalTime getTimeCalculated(Duration duration) {
+        return LocalTime.of(duration.toHoursPart(), duration.toMinutesPart(), duration.toSecondsPart());
     }
 }
