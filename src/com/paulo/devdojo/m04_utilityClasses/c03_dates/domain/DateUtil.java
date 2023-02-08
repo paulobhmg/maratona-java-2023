@@ -8,7 +8,6 @@ import java.time.Period;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-
 public abstract class DateUtil {
     public static String getCalendarDate(Calendar calendar) {
         return String.format("%d/%d/%d at %d:%d:%s",
