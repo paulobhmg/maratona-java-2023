@@ -21,7 +21,7 @@ class Adjuster implements TemporalAdjuster {
         };
     }
 }
-public class A128_TemporalAdjuster {
+public class A127_TemporalAdjuster {
     public static void main(String[] args) {
         LocalDate friday = LocalDate.of(2023, Month.FEBRUARY, 10);
         System.out.println(friday);

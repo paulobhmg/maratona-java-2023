@@ -5,7 +5,7 @@ import java.util.Map;
 
 /* As classes dessa aula permitem trabalharmos com datas e Zonas diretamente.
    São classes utilizadas em sistemas que deverão exibir a hora de acordo com sua zona. */
-public class A129_ZonedId_ZonedDateTime_OffSetDateTime {
+public class A128_ZonedId_ZonedDateTime_OffSetDateTime {
     public static void main(String[] args) {
         Map<String, String> shortIds = ZoneId.SHORT_IDS;
         System.out.println(shortIds);

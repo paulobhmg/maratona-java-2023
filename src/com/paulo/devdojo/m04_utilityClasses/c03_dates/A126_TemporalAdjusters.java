@@ -6,7 +6,7 @@ import java.time.temporal.TemporalAdjusters;
 
 /* A classe TemporalAdjusters é uma classe Abstrata que fornece diversos métodos staticos para manipulação de datas
    da biblioteca Java.Time que permitem manipular facilmente as informações de Data. */
-public class A127_TemporalAdjusters {
+public class A126_TemporalAdjusters {
     public static void main(String[] args) {
         LocalDate now = LocalDate.now();
 

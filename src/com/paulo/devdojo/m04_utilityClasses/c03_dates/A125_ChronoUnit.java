@@ -6,7 +6,7 @@ import java.time.temporal.ChronoUnit;
 
 /* A classe ChronoField é a que define as constantes para se trabalhar com data e hora no pacote Java.time
    Referenciamos a própria constante para trazer o resultado esperado. */
-public class A126_ChronoUnit {
+public class A125_ChronoUnit {
     public static void main(String[] args) {
         LocalDateTime birthday = LocalDateTime.of(1992, Month.AUGUST, 17, 05, 0, 43);
         System.out.println("Seconds: " +ChronoUnit.SECONDS.between(birthday, LocalDateTime.now()));
